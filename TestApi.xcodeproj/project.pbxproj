@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0356DD1249D3373001A92BA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0356DD0249D3373001A92BA /* Reachability.swift */; };
+		B04FC12A249A52D10008EE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC129249A52D10008EE77 /* AppDelegate.swift */; };
+		B04FC12E249A52D10008EE77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC12D249A52D10008EE77 /* ViewController.swift */; };
+		B04FC131249A52D10008EE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FC12F249A52D10008EE77 /* Main.storyboard */; };
+		B04FC133249A52D30008EE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04FC132249A52D30008EE77 /* Assets.xcassets */; };
+		B04FC136249A52D30008EE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FC134249A52D30008EE77 /* LaunchScreen.storyboard */; };
+		B04FC14D249A53D90008EE77 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC13F249A53D90008EE77 /* Result.swift */; };
+		B04FC14E249A53D90008EE77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC140249A53D90008EE77 /* NetworkManager.swift */; };
+		B04FC14F249A53D90008EE77 /* NewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC141249A53D90008EE77 /* NewSession.swift */; };
+		B04FC150249A53D90008EE77 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC142249A53D90008EE77 /* Response.swift */; };
+		B04FC151249A53D90008EE77 /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC143249A53D90008EE77 /* AddEntry.swift */; };
+		B04FC152249A53D90008EE77 /* GetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC144249A53D90008EE77 /* GetEntry.swift */; };
+		B04FC153249A53D90008EE77 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC145249A53D90008EE77 /* NetworkError.swift */; };
+		B04FC154249A53D90008EE77 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC147249A53D90008EE77 /* CoreAssembly.swift */; };
+		B04FC155249A53D90008EE77 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC149249A53D90008EE77 /* IRequest.swift */; };
+		B04FC156249A53D90008EE77 /* EntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC14A249A53D90008EE77 /* EntryRequest.swift */; };
+		B04FC157249A53D90008EE77 /* NewSessionrequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC14B249A53D90008EE77 /* NewSessionrequest.swift */; };
+		B04FC158249A53D90008EE77 /* AddEntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC14C249A53D90008EE77 /* AddEntryRequest.swift */; };
+		B04FC160249A54330008EE77 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC15B249A54330008EE77 /* ServicesAssembly.swift */; };
+		B04FC161249A54330008EE77 /* GetEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC15D249A54330008EE77 /* GetEntryService.swift */; };
+		B04FC162249A54330008EE77 /* AddEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC15E249A54330008EE77 /* AddEntryService.swift */; };
+		B04FC163249A54330008EE77 /* NewSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC15F249A54330008EE77 /* NewSessionService.swift */; };
+		B04FC165249A54C40008EE77 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC164249A54C40008EE77 /* User.swift */; };
+		B04FC1A0249A58340008EE77 /* CreateEntryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC16A249A58340008EE77 /* CreateEntryAssembly.swift */; };
+		B04FC1A1249A58340008EE77 /* CreateEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC16C249A58340008EE77 /* CreateEntryPresenter.swift */; };
+		B04FC1A2249A58340008EE77 /* CreateEntryModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC16E249A58340008EE77 /* CreateEntryModuleOutput.swift */; };
+		B04FC1A3249A58340008EE77 /* CreateEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC170249A58340008EE77 /* CreateEntryViewController.swift */; };
+		B04FC1A4249A58340008EE77 /* CreateEntryViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC171249A58340008EE77 /* CreateEntryViewInput.swift */; };
+		B04FC1A5249A58340008EE77 /* CreateEntryViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC172249A58340008EE77 /* CreateEntryViewOutput.swift */; };
+		B04FC1A6249A58340008EE77 /* CreateEntryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC174249A58340008EE77 /* CreateEntryInteractorInput.swift */; };
+		B04FC1A7249A58340008EE77 /* CreateEntryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC175249A58340008EE77 /* CreateEntryInteractorOutput.swift */; };
+		B04FC1A8249A58340008EE77 /* CreateEntryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC176249A58340008EE77 /* CreateEntryInteractor.swift */; };
+		B04FC1A9249A58340008EE77 /* CreateEntryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC178249A58340008EE77 /* CreateEntryRouter.swift */; };
+		B04FC1AA249A58340008EE77 /* CreateEntryRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC179249A58340008EE77 /* CreateEntryRouterInput.swift */; };
+		B04FC1AB249A58340008EE77 /* ShowEntryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC17C249A58340008EE77 /* ShowEntryAssembly.swift */; };
+		B04FC1AC249A58340008EE77 /* ShowEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC17E249A58340008EE77 /* ShowEntryPresenter.swift */; };
+		B04FC1AD249A58340008EE77 /* ShowEntryViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC180249A58340008EE77 /* ShowEntryViewOutput.swift */; };
+		B04FC1AE249A58340008EE77 /* ShowEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC181249A58340008EE77 /* ShowEntryViewController.swift */; };
+		B04FC1AF249A58340008EE77 /* ShowEntryViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC182249A58340008EE77 /* ShowEntryViewInput.swift */; };
+		B04FC1B0249A58340008EE77 /* ShowEntryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC184249A58340008EE77 /* ShowEntryInteractor.swift */; };
+		B04FC1B1249A58340008EE77 /* ShowEntryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC185249A58340008EE77 /* ShowEntryInteractorOutput.swift */; };
+		B04FC1B2249A58340008EE77 /* ShowEntryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC186249A58340008EE77 /* ShowEntryInteractorInput.swift */; };
+		B04FC1B3249A58340008EE77 /* ShowEntryRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC188249A58340008EE77 /* ShowEntryRouterInput.swift */; };
+		B04FC1B4249A58340008EE77 /* ShowEntryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC189249A58340008EE77 /* ShowEntryRouter.swift */; };
+		B04FC1B5249A58340008EE77 /* EntryListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC18C249A58340008EE77 /* EntryListAssembly.swift */; };
+		B04FC1B6249A58340008EE77 /* EntryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC18E249A58340008EE77 /* EntryListPresenter.swift */; };
+		B04FC1B7249A58340008EE77 /* EntryListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC190249A58340008EE77 /* EntryListViewOutput.swift */; };
+		B04FC1B8249A58340008EE77 /* EntryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC193249A58340008EE77 /* EntryListTableViewCell.swift */; };
+		B04FC1B9249A58340008EE77 /* EntryListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC194249A58340008EE77 /* EntryListDataSource.swift */; };
+		B04FC1BA249A58340008EE77 /* EntryListDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC195249A58340008EE77 /* EntryListDataSourceOutput.swift */; };
+		B04FC1BB249A58340008EE77 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC196249A58340008EE77 /* EntryListViewController.swift */; };
+		B04FC1BC249A58340008EE77 /* EntryListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC197249A58340008EE77 /* EntryListViewInput.swift */; };
+		B04FC1BD249A58340008EE77 /* EntryListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC199249A58340008EE77 /* EntryListInteractorInput.swift */; };
+		B04FC1BE249A58340008EE77 /* EntryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC19A249A58340008EE77 /* EntryListInteractor.swift */; };
+		B04FC1BF249A58340008EE77 /* EntryListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC19B249A58340008EE77 /* EntryListInteractorOutput.swift */; };
+		B04FC1C0249A58340008EE77 /* EntryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC19D249A58340008EE77 /* EntryListRouter.swift */; };
+		B04FC1C1249A58340008EE77 /* EntryListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC19E249A58340008EE77 /* EntryListRouterInput.swift */; };
+		B04FC1C2249A58340008EE77 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FC19F249A58340008EE77 /* TransitionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0356DD0249D3373001A92BA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B04FC126249A52D10008EE77 /* TestApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04FC129249A52D10008EE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B04FC12D249A52D10008EE77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B04FC130249A52D10008EE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B04FC132249A52D30008EE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04FC135249A52D30008EE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B04FC137249A52D30008EE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04FC13F249A53D90008EE77 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B04FC140249A53D90008EE77 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B04FC141249A53D90008EE77 /* NewSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSession.swift; sourceTree = "<group>"; };
+		B04FC142249A53D90008EE77 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B04FC143249A53D90008EE77 /* AddEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		B04FC144249A53D90008EE77 /* GetEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEntry.swift; sourceTree = "<group>"; };
+		B04FC145249A53D90008EE77 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B04FC147249A53D90008EE77 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		B04FC149249A53D90008EE77 /* IRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		B04FC14A249A53D90008EE77 /* EntryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryRequest.swift; sourceTree = "<group>"; };
+		B04FC14B249A53D90008EE77 /* NewSessionrequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionrequest.swift; sourceTree = "<group>"; };
+		B04FC14C249A53D90008EE77 /* AddEntryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryRequest.swift; sourceTree = "<group>"; };
+		B04FC15B249A54330008EE77 /* ServicesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		B04FC15D249A54330008EE77 /* GetEntryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEntryService.swift; sourceTree = "<group>"; };
+		B04FC15E249A54330008EE77 /* AddEntryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryService.swift; sourceTree = "<group>"; };
+		B04FC15F249A54330008EE77 /* NewSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionService.swift; sourceTree = "<group>"; };
+		B04FC164249A54C40008EE77 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B04FC16A249A58340008EE77 /* CreateEntryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryAssembly.swift; sourceTree = "<group>"; };
+		B04FC16C249A58340008EE77 /* CreateEntryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryPresenter.swift; sourceTree = "<group>"; };
+		B04FC16E249A58340008EE77 /* CreateEntryModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryModuleOutput.swift; sourceTree = "<group>"; };
+		B04FC170249A58340008EE77 /* CreateEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryViewController.swift; sourceTree = "<group>"; };
+		B04FC171249A58340008EE77 /* CreateEntryViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryViewInput.swift; sourceTree = "<group>"; };
+		B04FC172249A58340008EE77 /* CreateEntryViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryViewOutput.swift; sourceTree = "<group>"; };
+		B04FC174249A58340008EE77 /* CreateEntryInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractorInput.swift; sourceTree = "<group>"; };
+		B04FC175249A58340008EE77 /* CreateEntryInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractorOutput.swift; sourceTree = "<group>"; };
+		B04FC176249A58340008EE77 /* CreateEntryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractor.swift; sourceTree = "<group>"; };
+		B04FC178249A58340008EE77 /* CreateEntryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryRouter.swift; sourceTree = "<group>"; };
+		B04FC179249A58340008EE77 /* CreateEntryRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEntryRouterInput.swift; sourceTree = "<group>"; };
+		B04FC17C249A58340008EE77 /* ShowEntryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryAssembly.swift; sourceTree = "<group>"; };
+		B04FC17E249A58340008EE77 /* ShowEntryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryPresenter.swift; sourceTree = "<group>"; };
+		B04FC180249A58340008EE77 /* ShowEntryViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryViewOutput.swift; sourceTree = "<group>"; };
+		B04FC181249A58340008EE77 /* ShowEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryViewController.swift; sourceTree = "<group>"; };
+		B04FC182249A58340008EE77 /* ShowEntryViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryViewInput.swift; sourceTree = "<group>"; };
+		B04FC184249A58340008EE77 /* ShowEntryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractor.swift; sourceTree = "<group>"; };
+		B04FC185249A58340008EE77 /* ShowEntryInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractorOutput.swift; sourceTree = "<group>"; };
+		B04FC186249A58340008EE77 /* ShowEntryInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractorInput.swift; sourceTree = "<group>"; };
+		B04FC188249A58340008EE77 /* ShowEntryRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryRouterInput.swift; sourceTree = "<group>"; };
+		B04FC189249A58340008EE77 /* ShowEntryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowEntryRouter.swift; sourceTree = "<group>"; };
+		B04FC18C249A58340008EE77 /* EntryListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListAssembly.swift; sourceTree = "<group>"; };
+		B04FC18E249A58340008EE77 /* EntryListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListPresenter.swift; sourceTree = "<group>"; };
+		B04FC190249A58340008EE77 /* EntryListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListViewOutput.swift; sourceTree = "<group>"; };
+		B04FC193249A58340008EE77 /* EntryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListTableViewCell.swift; sourceTree = "<group>"; };
+		B04FC194249A58340008EE77 /* EntryListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListDataSource.swift; sourceTree = "<group>"; };
+		B04FC195249A58340008EE77 /* EntryListDataSourceOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListDataSourceOutput.swift; sourceTree = "<group>"; };
+		B04FC196249A58340008EE77 /* EntryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		B04FC197249A58340008EE77 /* EntryListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListViewInput.swift; sourceTree = "<group>"; };
+		B04FC199249A58340008EE77 /* EntryListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListInteractorInput.swift; sourceTree = "<group>"; };
+		B04FC19A249A58340008EE77 /* EntryListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListInteractor.swift; sourceTree = "<group>"; };
+		B04FC19B249A58340008EE77 /* EntryListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListInteractorOutput.swift; sourceTree = "<group>"; };
+		B04FC19D249A58340008EE77 /* EntryListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListRouter.swift; sourceTree = "<group>"; };
+		B04FC19E249A58340008EE77 /* EntryListRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListRouterInput.swift; sourceTree = "<group>"; };
+		B04FC19F249A58340008EE77 /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B04FC123249A52D10008EE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B04FC11D249A52D10008EE77 = {
+			isa = PBXGroup;
+			children = (
+				B04FC128249A52D10008EE77 /* TestApi */,
+				B04FC127249A52D10008EE77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B04FC127249A52D10008EE77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC126249A52D10008EE77 /* TestApi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04FC128249A52D10008EE77 /* TestApi */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC129249A52D10008EE77 /* AppDelegate.swift */,
+				B04FC12D249A52D10008EE77 /* ViewController.swift */,
+				B0356DD0249D3373001A92BA /* Reachability.swift */,
+				B04FC164249A54C40008EE77 /* User.swift */,
+				B04FC166249A58340008EE77 /* PresentationLayer */,
+				B04FC159249A54330008EE77 /* ServiceLayer */,
+				B04FC13D249A53D90008EE77 /* CoreLayer */,
+				B04FC12F249A52D10008EE77 /* Main.storyboard */,
+				B04FC132249A52D30008EE77 /* Assets.xcassets */,
+				B04FC134249A52D30008EE77 /* LaunchScreen.storyboard */,
+				B04FC137249A52D30008EE77 /* Info.plist */,
+			);
+			path = TestApi;
+			sourceTree = "<group>";
+		};
+		B04FC13D249A53D90008EE77 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC13E249A53D90008EE77 /* NetworkManager */,
+				B04FC146249A53D90008EE77 /* Assembly */,
+				B04FC148249A53D90008EE77 /* Requests */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		B04FC13E249A53D90008EE77 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC13F249A53D90008EE77 /* Result.swift */,
+				B04FC140249A53D90008EE77 /* NetworkManager.swift */,
+				B04FC141249A53D90008EE77 /* NewSession.swift */,
+				B04FC142249A53D90008EE77 /* Response.swift */,
+				B04FC143249A53D90008EE77 /* AddEntry.swift */,
+				B04FC144249A53D90008EE77 /* GetEntry.swift */,
+				B04FC145249A53D90008EE77 /* NetworkError.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B04FC146249A53D90008EE77 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC147249A53D90008EE77 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B04FC148249A53D90008EE77 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC149249A53D90008EE77 /* IRequest.swift */,
+				B04FC14A249A53D90008EE77 /* EntryRequest.swift */,
+				B04FC14B249A53D90008EE77 /* NewSessionrequest.swift */,
+				B04FC14C249A53D90008EE77 /* AddEntryRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B04FC159249A54330008EE77 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC15A249A54330008EE77 /* Assembly */,
+				B04FC15C249A54330008EE77 /* Services */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		B04FC15A249A54330008EE77 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC15B249A54330008EE77 /* ServicesAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B04FC15C249A54330008EE77 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC15D249A54330008EE77 /* GetEntryService.swift */,
+				B04FC15E249A54330008EE77 /* AddEntryService.swift */,
+				B04FC15F249A54330008EE77 /* NewSessionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B04FC166249A58340008EE77 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC167249A58340008EE77 /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		B04FC167249A58340008EE77 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC168249A58340008EE77 /* CreateEntry */,
+				B04FC17A249A58340008EE77 /* ShowEntry */,
+				B04FC18A249A58340008EE77 /* EntryList */,
+				B04FC19F249A58340008EE77 /* TransitionHandler.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B04FC168249A58340008EE77 /* CreateEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC169249A58340008EE77 /* Assembly */,
+				B04FC16B249A58340008EE77 /* Presenter */,
+				B04FC16F249A58340008EE77 /* View */,
+				B04FC173249A58340008EE77 /* Interactor */,
+				B04FC177249A58340008EE77 /* Router */,
+			);
+			path = CreateEntry;
+			sourceTree = "<group>";
+		};
+		B04FC169249A58340008EE77 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC16A249A58340008EE77 /* CreateEntryAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B04FC16B249A58340008EE77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC16C249A58340008EE77 /* CreateEntryPresenter.swift */,
+				B04FC16D249A58340008EE77 /* CreateEntryModuleOutput */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B04FC16D249A58340008EE77 /* CreateEntryModuleOutput */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC16E249A58340008EE77 /* CreateEntryModuleOutput.swift */,
+			);
+			path = CreateEntryModuleOutput;
+			sourceTree = "<group>";
+		};
+		B04FC16F249A58340008EE77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC170249A58340008EE77 /* CreateEntryViewController.swift */,
+				B04FC171249A58340008EE77 /* CreateEntryViewInput.swift */,
+				B04FC172249A58340008EE77 /* CreateEntryViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B04FC173249A58340008EE77 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC174249A58340008EE77 /* CreateEntryInteractorInput.swift */,
+				B04FC175249A58340008EE77 /* CreateEntryInteractorOutput.swift */,
+				B04FC176249A58340008EE77 /* CreateEntryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B04FC177249A58340008EE77 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC178249A58340008EE77 /* CreateEntryRouter.swift */,
+				B04FC179249A58340008EE77 /* CreateEntryRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B04FC17A249A58340008EE77 /* ShowEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC17B249A58340008EE77 /* Assembly */,
+				B04FC17D249A58340008EE77 /* Presenter */,
+				B04FC17F249A58340008EE77 /* View */,
+				B04FC183249A58340008EE77 /* Interactor */,
+				B04FC187249A58340008EE77 /* Router */,
+			);
+			path = ShowEntry;
+			sourceTree = "<group>";
+		};
+		B04FC17B249A58340008EE77 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC17C249A58340008EE77 /* ShowEntryAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B04FC17D249A58340008EE77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC17E249A58340008EE77 /* ShowEntryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B04FC17F249A58340008EE77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC180249A58340008EE77 /* ShowEntryViewOutput.swift */,
+				B04FC181249A58340008EE77 /* ShowEntryViewController.swift */,
+				B04FC182249A58340008EE77 /* ShowEntryViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B04FC183249A58340008EE77 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC184249A58340008EE77 /* ShowEntryInteractor.swift */,
+				B04FC185249A58340008EE77 /* ShowEntryInteractorOutput.swift */,
+				B04FC186249A58340008EE77 /* ShowEntryInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B04FC187249A58340008EE77 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC188249A58340008EE77 /* ShowEntryRouterInput.swift */,
+				B04FC189249A58340008EE77 /* ShowEntryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B04FC18A249A58340008EE77 /* EntryList */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC18B249A58340008EE77 /* Assembly */,
+				B04FC18D249A58340008EE77 /* Presenter */,
+				B04FC18F249A58340008EE77 /* View */,
+				B04FC198249A58340008EE77 /* Interactor */,
+				B04FC19C249A58340008EE77 /* Router */,
+			);
+			path = EntryList;
+			sourceTree = "<group>";
+		};
+		B04FC18B249A58340008EE77 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC18C249A58340008EE77 /* EntryListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B04FC18D249A58340008EE77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC18E249A58340008EE77 /* EntryListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B04FC18F249A58340008EE77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC190249A58340008EE77 /* EntryListViewOutput.swift */,
+				B04FC191249A58340008EE77 /* RecordListDataSource */,
+				B04FC196249A58340008EE77 /* EntryListViewController.swift */,
+				B04FC197249A58340008EE77 /* EntryListViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B04FC191249A58340008EE77 /* RecordListDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC192249A58340008EE77 /* Cell */,
+				B04FC194249A58340008EE77 /* EntryListDataSource.swift */,
+				B04FC195249A58340008EE77 /* EntryListDataSourceOutput.swift */,
+			);
+			path = RecordListDataSource;
+			sourceTree = "<group>";
+		};
+		B04FC192249A58340008EE77 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC193249A58340008EE77 /* EntryListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B04FC198249A58340008EE77 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC199249A58340008EE77 /* EntryListInteractorInput.swift */,
+				B04FC19A249A58340008EE77 /* EntryListInteractor.swift */,
+				B04FC19B249A58340008EE77 /* EntryListInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B04FC19C249A58340008EE77 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B04FC19D249A58340008EE77 /* EntryListRouter.swift */,
+				B04FC19E249A58340008EE77 /* EntryListRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B04FC125249A52D10008EE77 /* TestApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04FC13A249A52D30008EE77 /* Build configuration list for PBXNativeTarget "TestApi" */;
+			buildPhases = (
+				B04FC122249A52D10008EE77 /* Sources */,
+				B04FC123249A52D10008EE77 /* Frameworks */,
+				B04FC124249A52D10008EE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestApi;
+			productName = TestApi;
+			productReference = B04FC126249A52D10008EE77 /* TestApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04FC11E249A52D10008EE77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Kurban;
+				TargetAttributes = {
+					B04FC125249A52D10008EE77 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B04FC121249A52D10008EE77 /* Build configuration list for PBXProject "TestApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04FC11D249A52D10008EE77;
+			productRefGroup = B04FC127249A52D10008EE77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B04FC125249A52D10008EE77 /* TestApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B04FC124249A52D10008EE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04FC136249A52D30008EE77 /* LaunchScreen.storyboard in Resources */,
+				B04FC133249A52D30008EE77 /* Assets.xcassets in Resources */,
+				B04FC131249A52D10008EE77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B04FC122249A52D10008EE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04FC1BA249A58340008EE77 /* EntryListDataSourceOutput.swift in Sources */,
+				B04FC154249A53D90008EE77 /* CoreAssembly.swift in Sources */,
+				B04FC1A2249A58340008EE77 /* CreateEntryModuleOutput.swift in Sources */,
+				B04FC1AA249A58340008EE77 /* CreateEntryRouterInput.swift in Sources */,
+				B04FC12E249A52D10008EE77 /* ViewController.swift in Sources */,
+				B04FC1BB249A58340008EE77 /* EntryListViewController.swift in Sources */,
+				B04FC12A249A52D10008EE77 /* AppDelegate.swift in Sources */,
+				B04FC1B9249A58340008EE77 /* EntryListDataSource.swift in Sources */,
+				B04FC1B6249A58340008EE77 /* EntryListPresenter.swift in Sources */,
+				B04FC1BC249A58340008EE77 /* EntryListViewInput.swift in Sources */,
+				B04FC1B7249A58340008EE77 /* EntryListViewOutput.swift in Sources */,
+				B04FC1AB249A58340008EE77 /* ShowEntryAssembly.swift in Sources */,
+				B04FC1B5249A58340008EE77 /* EntryListAssembly.swift in Sources */,
+				B04FC155249A53D90008EE77 /* IRequest.swift in Sources */,
+				B04FC1B4249A58340008EE77 /* ShowEntryRouter.swift in Sources */,
+				B04FC163249A54330008EE77 /* NewSessionService.swift in Sources */,
+				B04FC1B2249A58340008EE77 /* ShowEntryInteractorInput.swift in Sources */,
+				B04FC1A5249A58340008EE77 /* CreateEntryViewOutput.swift in Sources */,
+				B0356DD1249D3373001A92BA /* Reachability.swift in Sources */,
+				B04FC1AD249A58340008EE77 /* ShowEntryViewOutput.swift in Sources */,
+				B04FC1A1249A58340008EE77 /* CreateEntryPresenter.swift in Sources */,
+				B04FC1B1249A58340008EE77 /* ShowEntryInteractorOutput.swift in Sources */,
+				B04FC1A3249A58340008EE77 /* CreateEntryViewController.swift in Sources */,
+				B04FC152249A53D90008EE77 /* GetEntry.swift in Sources */,
+				B04FC160249A54330008EE77 /* ServicesAssembly.swift in Sources */,
+				B04FC158249A53D90008EE77 /* AddEntryRequest.swift in Sources */,
+				B04FC1B3249A58340008EE77 /* ShowEntryRouterInput.swift in Sources */,
+				B04FC1A0249A58340008EE77 /* CreateEntryAssembly.swift in Sources */,
+				B04FC165249A54C40008EE77 /* User.swift in Sources */,
+				B04FC1A6249A58340008EE77 /* CreateEntryInteractorInput.swift in Sources */,
+				B04FC1A8249A58340008EE77 /* CreateEntryInteractor.swift in Sources */,
+				B04FC14E249A53D90008EE77 /* NetworkManager.swift in Sources */,
+				B04FC14D249A53D90008EE77 /* Result.swift in Sources */,
+				B04FC161249A54330008EE77 /* GetEntryService.swift in Sources */,
+				B04FC151249A53D90008EE77 /* AddEntry.swift in Sources */,
+				B04FC1B8249A58340008EE77 /* EntryListTableViewCell.swift in Sources */,
+				B04FC1B0249A58340008EE77 /* ShowEntryInteractor.swift in Sources */,
+				B04FC156249A53D90008EE77 /* EntryRequest.swift in Sources */,
+				B04FC1C0249A58340008EE77 /* EntryListRouter.swift in Sources */,
+				B04FC162249A54330008EE77 /* AddEntryService.swift in Sources */,
+				B04FC1AE249A58340008EE77 /* ShowEntryViewController.swift in Sources */,
+				B04FC1BF249A58340008EE77 /* EntryListInteractorOutput.swift in Sources */,
+				B04FC1A7249A58340008EE77 /* CreateEntryInteractorOutput.swift in Sources */,
+				B04FC14F249A53D90008EE77 /* NewSession.swift in Sources */,
+				B04FC1C1249A58340008EE77 /* EntryListRouterInput.swift in Sources */,
+				B04FC1AF249A58340008EE77 /* ShowEntryViewInput.swift in Sources */,
+				B04FC1AC249A58340008EE77 /* ShowEntryPresenter.swift in Sources */,
+				B04FC150249A53D90008EE77 /* Response.swift in Sources */,
+				B04FC1C2249A58340008EE77 /* TransitionHandler.swift in Sources */,
+				B04FC153249A53D90008EE77 /* NetworkError.swift in Sources */,
+				B04FC1BD249A58340008EE77 /* EntryListInteractorInput.swift in Sources */,
+				B04FC1A9249A58340008EE77 /* CreateEntryRouter.swift in Sources */,
+				B04FC1A4249A58340008EE77 /* CreateEntryViewInput.swift in Sources */,
+				B04FC157249A53D90008EE77 /* NewSessionrequest.swift in Sources */,
+				B04FC1BE249A58340008EE77 /* EntryListInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B04FC12F249A52D10008EE77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04FC130249A52D10008EE77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B04FC134249A52D30008EE77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04FC135249A52D30008EE77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04FC138249A52D30008EE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B04FC139249A52D30008EE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B04FC13B249A52D30008EE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = q.TestApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B04FC13C249A52D30008EE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = q.TestApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B04FC121249A52D10008EE77 /* Build configuration list for PBXProject "TestApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04FC138249A52D30008EE77 /* Debug */,
+				B04FC139249A52D30008EE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04FC13A249A52D30008EE77 /* Build configuration list for PBXNativeTarget "TestApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04FC13B249A52D30008EE77 /* Debug */,
+				B04FC13C249A52D30008EE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04FC11E249A52D10008EE77 /* Project object */;
+}
